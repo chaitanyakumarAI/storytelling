@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforming Health Insights: A Data-Driven Storytelling Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Image styles */
+        .question-section img {
+            width: 250px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, translate 0.3s ease-in-out; /* Smooth transition */
+        }
+    
+        /* Zoom effect on hover with centering */
+        .question-section img:hover {
+            transform: scale(3) translateX(-50%); /* Enlarges the image and shifts it left */
+            cursor: pointer; /* Changes cursor to pointer */
+        }
+    
+        /* Ensures the container has enough space */
+        .question-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+    
+        /* Discussion text styling */
+        .question-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            padding: 10px;
+        }
+    </style>
+    
+    <style>
+            
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        p {
+            font-size: 1.1em; /* Increased font size for readability */
+            padding: 10px;
+        }
+
+        /* Header styles */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0077b6;
+            font-weight: bold;
+        }
+
+        /* Question section styling */
+        .question-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        .question-section img {
+            width: 250px;
+            height: auto;
+            margin-left: 20px; /* Adds space between the discussion and the image */
+            border-radius: 10px;
+        }
+
+        .question-text {
+            flex: 1;
+        }
+
+        /* Back-to-top button */
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #0077b6;
+            font-weight: bold;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #e3f2fd;
+            color: #333;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body id="top">
+    <header>
+        <div class="logo-container">
+            <img src="assets/DALL·E 2025-02-15 10.32.59 - A minimalist logo for a health survey storytelling website. The design should feature complementary colors like cyan and deep navy blue. The logo shou.png" alt="Health Survey Storytelling Logo" class="logo">
+            <h1 class="pi">Health Survey Data Storytelling</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#questions">General Questions Arised</a></li>
+                <li><a href="#insights">Key Insights</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Welcome to Health Survey Data Storytelling, a platform dedicated to transforming complex health survey data into meaningful and interactive stories. Created by Chaitanya Kumar Ranga, this website aims to present insights in an engaging, easy-to-understand manner.</p>
+    </section>
+
+    <section id="questions">
+        <h2>General Questions Arised</h2>
+
+        <!-- Question 1 -->
+        <div class="question-section">
+            <div class="question-text">
+                <h3>How frequently do you visit hospitals or clinics?</h3>
+                <p>This visualization shows the distribution of hospital visits among respondents. Frequent visits may indicate chronic conditions or ongoing treatments. Understanding visit frequency can help identify healthcare system gaps. Digital solutions like teleconsultations could reduce unnecessary in-person visits, saving time and costs. Analyzing this data can also help target specific groups for healthcare improvements.</p>
+            </div>
+            <img src="plots/hospital_visits.png" alt="Hospital Visit Frequency">
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-section">
+            <div class="question-text">
+                <h3>Would you prefer using a digital system to manage your health records and prescriptions?</h3>
+                <p>The chart illustrates varying preferences for digital systems based on hospital visit frequency. Those with chronic conditions may prefer digital records for continuity of care. Digital systems can also reduce the risk of losing records or prescription errors. However, barriers like data privacy and unfamiliarity still exist. Enhancing features such as easy navigation and data protection could increase adoption.</p>
+            </div>
+            <img src="plots/hospital_visits_by_attribute.png" alt="Digital System Preference vs. Hospital Visits">
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-section">
+            <div class="question-text">
+                <h3>What challenges have you faced managing health records?</h3>
+                <p>Common challenges include losing records, incomplete documentation, and illegible prescriptions. Mismanagement of records may result in delayed treatments or duplicate testing. Manual processes also increase the likelihood of errors. Digital systems can centralize information, making it easier for patients and providers to access records. Educating users on digital record systems could address some of these concerns.</p>
+            </div>
+            <img src="plots/heatmap.png" alt="Challenges vs. Prescription Issues Heatmap">
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-section">
+            <div class="question-text">
+                <h3>Why do you face issues tracking medication schedules or dosages?</h3>
+                <p>Tracking medication schedules can be difficult due to manual processes or miscommunication. Missed or incorrect doses can lead to severe health consequences. Digital systems can offer reminders and alerts to ensure adherence. Integration with pharmacies could streamline refill orders. Addressing technical literacy and trust issues is key to encouraging adoption of digital medication management tools.</p>
+            </div>
+            <img src="plots/challenges_vs_quality.png" alt="Medication Challenges">
+        </div>
+    </section>
+    <section id="insights">
+        <h2>Key Insights</h2>
+        <div class="insights-grid">
+            <!-- Plot 1 -->
+            <div class="chart">
+                <h3>correlation heatmap observed:</h3>
+                <img src="plots/heatmap1.png" alt="Hospital Visit Frequency">
+            </div>
+    
+            <!-- Plot 2 -->
+            <div class="chart">
+                <h3>Feature importance in the survey</h3>
+                <img src="plots/Screenshot 2025-02-15 104756.png" alt="Hospital Visits by Digital Preference">
+            </div>
+        </div>
+    </section>
+    
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>The survey demonstrates that a significant portion of respondents prefer using digital health records. Addressing specific challenges could further improve healthcare experiences. Key focus areas include enhancing data security, offering easy navigation, and providing educational resources. By overcoming adoption barriers, digital health systems can drive better patient outcomes and overall satisfaction.</p>
+    </section>
+
+    <!-- Back-to-top button -->
+    <a href="#top" class="back-to-top">↑ Top</a>
+
+    <footer>
+        <p>Health Survey Storytelling | 2025</p>
+    </footer>
+</body>
+</html>
